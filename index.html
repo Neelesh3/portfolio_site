@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neelesh Kumar Agashe — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="#hero">Neelesh Agashe</a>
+
+      <!-- Mobile toggle -->
+      <button id="navToggle" class="nav-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="primaryNav" class="nav-links" aria-label="Primary navigation" aria-hidden="true">
+        <ul>
+          <li><a href="#about" data-link>About</a></li>
+          <li><a href="#projects" data-link>Projects</a></li>
+          <li><a href="#contact" data-link>Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Download CV button (opens in new tab) -->
+      <div class="nav-cta">
+        <!-- Link will open the PDF in a new tab. Replace href if you move the PDF. -->
+        <a class="btn btn-small" id="downloadCvLocal" href="Neelesh_Agashe_resume_.pdf" target="_blank" rel="noopener">Open CV</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Hi — I'm <span class="accent">Neelesh Kumar Agashe</span></h1>
+        <p class="subtitle">Data Science & Frontend enthusiast — Python, SQL, Tableau, ML</p>
+
+        <div class="contact-inline">
+          <a class="link-info" href="mailto:neeleshkumaragashe@gmail.com">neeleshkumaragashe@gmail.com</a>
+          <span class="sep">•</span>
+          <a class="link-info" href="tel:+919407625635">+91 94076 25635</a>
+          <span class="sep">•</span>
+          <span class="muted">Raipur, Chhattisgarh</span>
+        </div>
+
+        <div class="hero-cta">
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn btn-ghost" href="#contact">Contact me</a>
+        </div>
+
+        <div class="socials">
+          <a class="link" href="https://www.linkedin.com/in/neelesh-kumar-agashe-284313247/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="link" href="https://github.com/Neelesh3" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-hidden="true">
+        <!-- optional image -->
+        <img src="thumbs/my_image.jpg" alt="Decorative illustration" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a B.Tech (CSE) student from Bhilai Institute of Technology, Raipur (2021–2025). I build data-driven solutions and interactive web UI.
+        My focus areas: machine learning, data analysis, visualization, and front-end UI.
+      </p>
+
+      <div class="profile-stats">
+        <div><strong>Education</strong><br/>B.Tech — Bhilai Institute of Technology (CGPA: 6.81)</div>
+        <div><strong>Location</strong><br/>Raipur, Chhattisgarh</div>
+      </div>
+
+      <h3>Skills</h3>
+      <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">SQL</div>
+        <div class="skill">C++</div>
+        <div class="skill">Pandas / NumPy / scikit-learn</div>
+        <div class="skill">Matplotlib / Tableau / Power BI</div>
+        <div class="skill">MySQL / SQLite</div>
+        <div class="skill">Git & GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Selected Projects</h2>
+      <p class="muted">Click a card to view details or open the repo/demo links.</p>
+
+      <div class="project-grid">
+        <!-- Project 1: Credit Card Fraud Detection -->
+        <article class="project-card" tabindex="0" data-project>
+          <img class="project-thumb" src="thumbs/project1.svg" alt="Project 1 thumbnail" />
+          <div class="project-meta">
+            <h3>Credit Card Fraud Detection</h3>
+            <p class="muted">Nov 2024 — Python, Pandas, NumPy, Matplotlib, scikit-learn</p>
+            <p class="small">
+              Built a logistic-regression based model achieving ~87% accuracy with feature engineering and hyperparameter tuning.
+            </p>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-sm" href="https://github.com/Neelesh3/credit-card-fraud-detection" target="_blank" rel="noopener">Code</a>
+            <a class="link" href="https://neelesh3.github.io/credit-card-fraud-detection" target="_blank" rel="noopener">Live</a>
+            <button class="btn btn-sm view-project" data-project-id="1">Preview</button>
+          </div>
+        </article>
+
+        <!-- Project 2: Student Performance Prediction -->
+        <article class="project-card" tabindex="0" data-project>
+          <img class="project-thumb" src="thumbs/project2.svg" alt="Project 2 thumbnail" />
+          <div class="project-meta">
+            <h3>Student Performance Prediction</h3>
+            <p class="muted">Oct 2024 — Machine learning, data cleaning, feature engineering</p>
+            <p class="small">
+              Achieved ~96% accuracy forecasting student performance after handling missing values and encoding categorical features.
+            </p>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-sm" href="https://github.com/Neelesh3/student-performance-prediction" target="_blank" rel="noopener">Code</a>
+            <a class="link" href="https://neelesh3.github.io/student-performance-prediction" target="_blank" rel="noopener">Live</a>
+            <button class="btn btn-sm view-project" data-project-id="2">Preview</button>
+          </div>
+        </article>
+
+        <!-- Project 3: (placeholder for future) -->
+        <article class="project-card" tabindex="0" data-project>
+          <img class="project-thumb" src="thumbs/project3.svg" alt="Project 3 thumbnail" />
+          <div class="project-meta">
+            <h3>Full-stack Demo App</h3>
+            <p class="muted">Portfolio / Demo — Authentication, CRUD</p>
+            <p class="small">
+              Full-stack demo illustrating end-to-end flows and responsive frontend.
+            </p>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-sm" href="#" id="project3-code" target="_blank" rel="noopener">Code</a>
+            <a class="link" href="#" id="project3-live" target="_blank" rel="noopener">Live</a>
+            <button class="btn btn-sm view-project" data-project-id="3">Preview</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT MODAL -->
+  <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Close project preview">&times;</button>
+      <div class="modal-body">
+        <h3 id="modalTitle">Project title</h3>
+        <p id="modalDesc">Project description goes here.</p>
+        <div id="modalExample" class="modal-example"></div>
+        <div class="modal-links">
+          <a id="modalCode" class="btn btn-sm" href="#" target="_blank" rel="noopener">Open Code</a>
+          <a id="modalLive" class="link" href="#" target="_blank" rel="noopener">Open Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="muted">Want to work together? Message me or find me on LinkedIn / GitHub.</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required minlength="2" />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required value="neeleshkumaragashe@gmail.com" />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="btn">Send message</button>
+          <span id="formSuccess" class="form-success" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+
+      <div class="contact-links">
+        <a class="link" href="https://www.linkedin.com/in/neelesh-kumar-agashe-284313247/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="link" href="https://github.com/Neelesh3" target="_blank" rel="noopener">GitHub</a>
+        <a class="link" href="mailto:neeleshkumaragashe@gmail.com">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Neelesh Kumar Agashe — Built with ❤️</p>
+    </div>
+  </footer>
+</body>
+</html>
